@@ -1,9 +1,3 @@
-#camelCase
-myText = ''
+courseName #camelCase
 
-myText
-
-myText
-
-#snake_case
-my_text
+course_name #snake_case

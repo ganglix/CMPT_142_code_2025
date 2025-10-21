@@ -12,3 +12,10 @@ s = "Dragons"
 # (b) the eleventh character in s, i.e. ’I’
 # (c) the last character in s, i.e. ’e’
 
+# (a)
+print(s[0])
+# (b)
+print(s[11-1])
+# (c)
+print(s[-1])
+print(s[len(s)-1])
