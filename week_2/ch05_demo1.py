@@ -1,11 +1,13 @@
 # In this demonstration we will show how to use the console
 # display on console
-
+from week_2.ch05_ex1 import number
 
 # input function to obtain answers to simple questions
 # # example 1
-
-
+number1 = float(input('Please enter a number: '))
+number2 = float(input('Please enter another number: '))  # input() will return a str
+print(type(number1))
+print('The sum of', number1, 'and', number2, 'is', number1 + number2, '.')
 
 
 
