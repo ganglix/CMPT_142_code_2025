@@ -1,0 +1,11 @@
+Q1:
+INITIALIZE one variable to the integer 2 and
+a second variable to the integer 3.
+Then PRINT the PRODUCT of those variables.
+
+Q2(optional):
+Define a FUNCTION called first_letter.
+It takes a word string as an argument and
+returns the first letter of the word.
+for example
+first_letter('mario') will return 'm'
