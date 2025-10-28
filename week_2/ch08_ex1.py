@@ -3,11 +3,11 @@ B = "tea"
 C = "Drink"
 
 print(
-    # len(A) < len(C),
-    # A < B,
-    # A > C,
-    # A == B,
-    # A == A,
+    len(A) < len(C),
+    A < B,
+    A > C,
+    A == B,
+    A == A,
 )
 
 
