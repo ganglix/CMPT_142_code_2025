@@ -7,6 +7,17 @@
 (0,3) (1,3) (2,3) (3,3) (4,3) (5,3) (6,3) (7,3) (8,3) (9,3)
 (0,4) (1,4) (2,4) (3,4) (4,4) (5,4) (6,4) (7,4) (8,4) (9,4)
 """
-# M = 10
-# N = 5
+M = 10
+N = 5
 
+# just do the first line: ( ,0)
+for col in range(M):
+    print('(' + str(col) +',' + '0' + ')', end=' ')  # or use fstring print(f'({col},0)', end=' ')
+print()
+print()
+# do all lines
+for row in range(N):
+    for col in range(M):
+        # for each row repeat the col
+        print('(' + str(col) + ',' + '0' + ')', end=' ')
+    print()  # newline after each row is done
