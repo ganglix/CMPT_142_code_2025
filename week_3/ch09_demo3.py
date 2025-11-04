@@ -5,6 +5,8 @@ count = 0
 while count >= 0:
     # some calculation
     count += 1
+    # print(count)
+
 print("while loop is done")
 
 
