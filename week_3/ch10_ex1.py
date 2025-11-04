@@ -11,10 +11,34 @@
 pkg_weights = [2, 6, 8, 34, 56, 67, 4, 2, 33]
 
 # (a) Creates list light_pkgs of parcels that weigh less than 5
-
-
+light_pkgs = []
+for p in pkg_weights:
+    if p < 5:
+        light_pkgs.append(p)
+print(light_pkgs)
 
 # (b) Removes parcels from pkg_weights that exceed 15 lbs
+
+# for p in pkg_weights:    # pkg_weights is changing during the for loop
+#     if p > 15:           # DO NOT iterate over a size-changing list
+#         pkg_weights.remove(p)
+# print(pkg_weights)
+pkg_weights_clone = pkg_weights.copy()
+for p in pkg_weights_clone:    # .copy() creates a (new)clone of the list
+    if p > 15:           # so the cloned list does not change during iteration
+        pkg_weights.remove(p)
+print(pkg_weights)
+
+
+# heavy_pkgs = []
+# for p in pkg_weights:
+#     if p > 15:
+#         heavy_pkgs.append(p)
+#
+# for p in heavy_pkgs:  # heavy_pkgs does not change during iteration
+#     pkg_weights.remove(p)
+
+print(pkg_weights)
 
 
 
@@ -49,5 +73,6 @@ pkg_weights = [2, 6, 8, 34, 56, 67, 4, 2, 33]
 
 
 
-
-
+# create a clone, new list
+# L_new = L.copy() # use .copy()
+# L_new = L[:] # use slicing
