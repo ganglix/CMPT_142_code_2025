@@ -1,2 +1,5 @@
-Define a FUNCTION that accepts two strings. The function should RETURN True if both
-strings are shorter than 10 characters, and False otherwise.
+Define a FUNCTION that accepts a float representing a temperature. The
+function should RETURN one of the following 3 strings:
+- "ice" if the temperature is 0 or lower
+- "steam" if the temperature 100 or higher
+- "water" if the temperature is between 0 and 100
