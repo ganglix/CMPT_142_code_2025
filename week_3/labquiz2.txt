@@ -1,5 +1,7 @@
-Define a FUNCTION that accepts a float representing a temperature. The
-function should RETURN one of the following 3 strings:
-- "ice" if the temperature is 0 or lower
-- "steam" if the temperature 100 or higher
-- "water" if the temperature is between 0 and 100
+
+Define a FUNCTION that accepts a number, and RETURN the square of it and print("job done!")
+
+def square(n):
+    print('job done!')
+    return n**2
+
