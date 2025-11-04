@@ -37,8 +37,10 @@ sep = ('\n')
 print(url.replace('www.', ''))
 print(url.removeprefix('www.'))
 
-print(dir(url))
-
+print('use lstrip() to remove')
+print(url.lstrip('www.'))
+print(url.lstrip('w.'))   # w and . are the garbage to be removed, so it removes w s and .
+u#rl.lstrip() is the same as url.lstrip(' ')
 
 # useful in practice?
 # letter = input(' please type a letter in lowercase: ').lower()
@@ -51,5 +53,5 @@ print(dir(url))
 
 
 # how do I know what kind of methods are out there? How do I know the syntax/usage?
-dir('letter')
-help('letter'.upper)   # upper is the method name, do not include ()
+# dir('letter')
+# help('letter'.upper)   # upper is the method name, do not include ()
