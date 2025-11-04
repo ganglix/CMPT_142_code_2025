@@ -15,10 +15,10 @@ flu_case = [13, 14, 9, 16, 10, 18, 22, 19, 16, 22,
 days = range(1, len(flu_case) + 1)
 
 import matplotlib.pyplot as plt
-
-plt.plot(days, flu_case, linestyle='--', marker='o', color='C0')
+plt.plot(days, flu_case, linestyle='--', marker='o', color='red', label='case')
 plt.xlabel('Days')
-plt.ylabel('Flu cases')
-plt.title('Flu case - day')
-# plt.savefig('flu_case.tiff', dpi=600)
+plt.ylabel('Flu case number')
 plt.show()
+
+
+

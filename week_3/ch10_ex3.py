@@ -10,3 +10,15 @@
 provs = ["AB", "BC", "MB", "NB", "NL", "NT", "NS", "NU", "ON", "PE", "QC", "SK", "YT"]
 pops = [4200, 4680, 1290, 750, 530, 40, 940, 40, 13790, 150, 8260, 1130, 40]
 
+# prov_pop = []
+# for i in range(len(provs)):
+#     sublist = [provs[i], pops[i]]
+#     prov_pop.append(sublist)
+#
+# print(prov_pop)
+
+prov_pop = []
+for prov, pop in zip(provs, pops):
+    prov_pop.append([prov, pop])
+
+print(prov_pop)

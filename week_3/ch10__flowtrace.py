@@ -35,11 +35,33 @@ print([2,4,6])
 
 
 
-# L = []
-# for i in range(3):
-#     L.append([])
-# for char in "abc":
-#     L[0].append(char)
-# print(L)
+L = []
+for i in range(3):
+    L.append([])
+for char in "abc":
+    L[0].append(char)
+print(L)
+
+"""
+L = []
+for i in range(3):  # 0 1 2
+    i = 0
+    [].append([])
+    i = 1
+    [ [] ].append([])   # append [] to [] with L sticker on it
+    
+for char in "abc":  # a b c
+    char = 'a'
+    [ [], [] ][0].append('a')   #same as next two lines
+    # first_sub_L = [ [], [] ][0]
+    # first_sub_L.append(char)
+    
+    char = 'b'
+    [ ['a'], [] ][0].append('b')
+    char = 'c'
+    [ ['a','b'], [] ][0].append('c')
+print([ ['a','b', 'c'], [] ])
+
+"""
 
 

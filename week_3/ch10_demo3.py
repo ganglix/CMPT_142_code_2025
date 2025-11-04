@@ -13,7 +13,7 @@ def appendage(minilist, x):
 L = [10, 20, 30]
 x = 50
 appendage(L, x)
-print(L)
+print(L)    # L list bucket is not changed either. however, there is a 42 got added inside
 print(x)
 
 

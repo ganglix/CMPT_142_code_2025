@@ -23,20 +23,21 @@ print(light_pkgs)
 #     if p > 15:           # DO NOT iterate over a size-changing list
 #         pkg_weights.remove(p)
 # print(pkg_weights)
-pkg_weights_clone = pkg_weights.copy()
-for p in pkg_weights_clone:    # .copy() creates a (new)clone of the list
-    if p > 15:           # so the cloned list does not change during iteration
-        pkg_weights.remove(p)
-print(pkg_weights)
+
+# pkg_weights_clone = pkg_weights.copy()
+# for p in pkg_weights_clone:    # .copy() creates a (new)clone of the list
+#     if p > 15:           # so the cloned list does not change during iteration
+#         pkg_weights.remove(p)
+# print(pkg_weights)
 
 
-# heavy_pkgs = []
-# for p in pkg_weights:
-#     if p > 15:
-#         heavy_pkgs.append(p)
-#
-# for p in heavy_pkgs:  # heavy_pkgs does not change during iteration
-#     pkg_weights.remove(p)
+heavy_pkgs = []
+for p in pkg_weights:
+    if p > 15:
+        heavy_pkgs.append(p)
+
+for p in heavy_pkgs:  # heavy_pkgs does not change during iteration
+    pkg_weights.remove(p)
 
 print(pkg_weights)
 
@@ -44,15 +45,17 @@ print(pkg_weights)
 
 # (c) Print the:
 # • contents of light_pkgs in ascending order
+# light_pkgs.sort()
+# print(light_pkgs)
 
+print(sorted(pkg_weights))
 
 
 # • number of parcels in light_pkgs
-
-
+print(len(light_pkgs))
 
 # • number of parcels removed from pkg_weights
-
+print(len(heavy_pkgs))
 
 
 
