@@ -1,0 +1,8 @@
+Write a program that asks the user to enter a POSITIVE number. The program
+should keep using CONSOLE INPUT to get the user's answer AS MANY TIMES AS
+NEEDED until they enter a positive number.
+
+
+Define a FUNCITON that accepts a list of integers. The function should
+RETURN True if the list CONTAINS at least one NEGATIVE NUMBER, and False
+otherwise.
