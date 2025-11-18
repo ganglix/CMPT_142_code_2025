@@ -9,19 +9,91 @@ def is_valid_username(username):
     """
 
 # Testing - black box
-# black box reason:
-# coverage:
+# black box reason: To test if the function does what it has promised in the docstring
+# coverage: cover every single functionality of the function
 
 # test cases
 
+    # length- 1-18 characters long
+    """
+    input: 'a'
+    expected_output: True  # we determine this by reading the docstring, and use our brain to figure out
+    reason: 'a' length is 1, only letters, no underscore
+    
+    input: 'a'*18
+    expected_output: True  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input length is 18, only letters, no underscore
+    
+    input: 'a'*19
+    expected_output: False  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input length is 19, violates the length constraint
+    
+    input: ''
+    expected_output: False  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input length is zero, violates the length constraint
+    """
+
+    # - can be letters and/or numbers
+    """
+    input: 'abc'
+    expected_output: True  # we determine this by reading the docstring, and use our brain to figure out
+    reason: 'abc' has only letters, satisfies constraints
+    
+    input: '12'
+    expected_output: True  # we determine this by reading the docstring, and use our brain to figure out
+    reason: '12' has only numbers, satisfies constraints
+   
+    input: 'abc12'
+    expected_output: True  # we determine this by reading the docstring, and use our brain to figure out
+    reason: 'abc12' has numbers and letters, satisfies constraints
+    
+    input: 'abc12@gmail.com'
+    expected_output: False  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input has special characters, which violates constraints
+    """
+    # - underscore is allowed if it’s not the first character
+    """
+    input: '_'
+    expected_output: False  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input has _ as the first character, which violates _ constraints
+    
+    input: 'a_'
+    expected_output: True  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input has _ not as the first character, which satisfies _ constraints
+    
+    input: 'a_b'
+    expected_output: False  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input has _ in the middle, which satisfies _ constraints
+
+    
+
+    """
 
 
 
 # test driver example
 # test driver is a program that runs the test cases
 
+# for example:
+    """
+    input: 'abc12@gmail.com'
+    expected_output: False  # we determine this by reading the docstring, and use our brain to figure out
+    reason: input has special characters, which violates constraints
+    """
+inputs = 'abc12@gmail.com'
+expected_output = False  # we determine this by reading the docstring, and use our brain to figure out
+reason = "input has special characters, which violates constraints"
 
+output = is_valid_username(inputs)
+# if output == expected_output:      # do not report passed test cases
+#     print("test case passed!!!")
 
+if output != expected_output:    # only report when fault is found
+    print("fault found!",
+          'inputs:', inputs,
+          'output got from the function:', output,
+          'expected_output:', expected_output,
+          'test reason', reason)
 
 
 
