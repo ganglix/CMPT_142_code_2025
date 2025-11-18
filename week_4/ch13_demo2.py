@@ -8,3 +8,15 @@ green_theme = {
 }
 # halve all of the green intensities (round down to nearest int)
 
+# reduced problem: print out all green intensities
+for component in green_theme:
+    # component : {r g b}
+    rgb = green_theme[component]
+    print(rgb['green'])    # green_theme[component]['green']
+
+for component in green_theme:
+    # component : {r g b}
+    rgb = green_theme[component]
+    rgb['green'] //= 2
+
+print(green_theme)
