@@ -27,7 +27,9 @@ f = open(file_path, 'w')  # "w" means write (overwrite) mode, 'a' means append t
 # extract book info
 for book in books:
     # book is a dict
-    book_info = book['title'] + ',' + book['author'] + ',' + str(book['year_published'])
+    # book_info = book['title'] + ',' + book['author'] + ',' + str(book['year_published'])
+    book_info = ','.join([book['title'], book['author'], str(book['year_published'])])
+
     # write book info as line on the file
     # print(book_info)  # print() always print on a new line
 

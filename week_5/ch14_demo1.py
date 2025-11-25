@@ -11,7 +11,7 @@
 # . means current folder
 # .. means parent folder
 # file_path = "./ext_directory_data.txt"   # . means week_5 folder
-# file_path = "../week_5/ext_directory_data.txt" # .. means CMPT_142_code_2025 folde
+# file_path = "../week_5/ext_directory_data.txt" # .. means CMPT_142_code_2025 folder
 
 file_path = "ext_directory_data.txt"
 # by default python will find this file in the current folder which contains your py file
@@ -25,7 +25,7 @@ extensions = {}   # ext number: name
 for line in f:
     line = line.rstrip() # to remove the hidden "new line \n" at the end of each line
     # parse the line
-    line = line.split(',') # to parse the long string into a list of substrings using ,
+    line = line.split(',') # to parse the long string into a list of substrings using,
     print(line)
     # add records into the dict
     extensions[int(line[0])] = line[1]

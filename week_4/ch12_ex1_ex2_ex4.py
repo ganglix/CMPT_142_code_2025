@@ -99,15 +99,6 @@ if output != expected_output:    # only report when fault is found
 
 
 
-
-
-
-
-
-
-
-
-
 # # ~~~~~~~~~~~~~~~~after dictionary~~~~~~~~~~~~~~~~~~~~
 #
 # # dictionary of test case suite to feed into test driver loop
