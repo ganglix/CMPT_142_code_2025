@@ -1,0 +1,5 @@
+Define a FUNCTION that accepts a list of integers with at least 3
+elements.
+The function should compute and RETURN the SUM of the first, middle, and
+last values in that list. Use integer division to determine the index of the middle
+element.
