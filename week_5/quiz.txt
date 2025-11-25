@@ -1,3 +1,20 @@
 Define a FUNCTION that accepts a list of integers. The function should RETURN the
 SUM of all the ODD numbers in the list.
 If there are no odd numbers, the function should return 0.
+
+def sum_odd(L):
+    odd_list = [n for n in L if n % 2 != 0]
+    if len(odd_list) > 0:
+        return sum(odd_list)
+    else:
+        return 0
+
+def sum_odd(L):
+    odd_list = []
+    for n in L:
+        if n % 2 != 0:
+            odd_list.append(n)
+    if len(odd_list) > 0:
+        return sum(odd_list)
+    else:
+        return 0
