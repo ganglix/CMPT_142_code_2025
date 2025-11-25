@@ -2,35 +2,45 @@ There are 10 types of people in this world, those who
 understand binary and those who don't.
 
 
-number:
-numeral:
-
-
-
-
+number: pure, abstract quantity
+numeral: man-made symbols that are used to describe quantity (number)
+         following certain rules.
                                                                                 use decimal rule of expression
 quantity   numeral(decimal, arabic number)    numeral(binary, arabic number)    to describe the quantity(number)
-
-
+.           1                                  1                                one
+..          2                                 10                                two
+...         3                                 11                                three
+....        4                                100                                four
 
 
 Decimal
+base 10  (0~9)
+place       3       2       1       0
+VOD         10^3    10^2    10^1    10^0   (value of digit/bit)
+            1000s   100s     10s     1s
 
+100 (decimal)
 
-
+100 (binary)
 
 Binary
+base 2   (0,1)
+place       3       2       1       0
+VOD         2^3     2^2     2^1     2^0   (value of digit)
+            8s      4s      2s      1s
 
-
-
-
+                    1       1       0   (binary) = 6 (decimal)
 
 
 Ex 1
 Binary to Decimal
 0b1001
 
-
+place       3       2       1       0
+VOD         2^3     2^2     2^1     2^0
+            1       0       0       1      (binary)
+            ---------------------------
+            8   +   0   +   0   +   1   =  9 (decimal)
 
 
 
@@ -53,12 +63,17 @@ if b is still an empty string : # (i .e., x was 0 to begin with )
 else :
     return b
 -----------------------------------------------------------------
-
 convert 19 to binary
         x       r       b
+                        ''
+        19      1       '1'
+        9       1      '11'
+        4       0     '011'
+        2       0    '0011'
+        1       1   '10011'
+        0       while condition is false; loop stops
 
-
-
+19(decimal) = 10011 (binary)
 
 
 Ex 3
@@ -66,8 +81,9 @@ Binary addition
 
             1   0   1   1   0
         +           1   0   1
+    Carry       1
         ------------------------
-
+            1   1   0   1   1
 
 
 Ex 4
@@ -76,20 +92,37 @@ Binary multiplication
                                     1    0    1    1    0
                                 x   1    0    1    1    1
                                 -------------------------
-
-
-
+                                    1    0    1    1    0
+                               1    0    1    1    0
+                          1    0    1    1    0
+                     0    0    0    0    0
+                1    0    1    1    0
+         carry       1    1    1    1    1
+                ------------------------------------------
+                1    1    1    1    1    1    0    1     0
 
 
 Bonus ex
 Binary division
 
-
+                  1   1   0   0 . 1
             -------------------
     1   0   ) 1   1   0   0   1
-
-
-
+              1   0
+              -----
+                  1   0
+                  1   0
+                  -----
+                      0   0
+                      0   0
+                      -----
+                          0   1
+                          0   0
+                          -----
+                              1   0
+                              1   0
+                              -----
+                                  0
 
 
 

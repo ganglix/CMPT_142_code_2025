@@ -19,3 +19,19 @@ books = [
     {"title": "Pride and Prejudice", "author": "Jane Austen",
      "year_published": 1813}
 ]
+
+file_path = 'my_books.txt'
+# create a file
+f = open(file_path, 'w')  # "w" means write (overwrite) mode, 'a' means append to existing file
+
+# extract book info
+for book in books:
+    # book is a dict
+    book_info = book['title'] + ',' + book['author'] + ',' + str(book['year_published'])
+    # write book info as line on the file
+    # print(book_info)  # print() always print on a new line
+
+    f.write(book_info)
+    f.write('\n')     # add a new line to start on the next line, like a typewriter
+
+f.close()  # to save and close the file

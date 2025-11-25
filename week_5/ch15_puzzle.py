@@ -10,3 +10,7 @@ x = np.array([10]).astype('int8')
 while x[0] > 0:
     x[0] = x[0] + 1
     print(x[0])
+
+
+L = [2 ** n for n in range(16-1)] # 16 bit signed, 0...14
+print(sum(L))  # max value for 16 bit signed number
