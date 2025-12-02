@@ -1,0 +1,11 @@
+Define a FUNCTION that accepts a list of strings. The function should RETURN a NEW list that contains ONLY the strings that are SHORTER THAN 5 CHARACTERS.
+
+def short_list(L):
+    short_L = []
+    for s in L:
+        if len(s) < 5:
+            short_L.append(s)
+    return short_L
+
+ def short_list(L):
+    return [s for s in L if len(s) < 5]
