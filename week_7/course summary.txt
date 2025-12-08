@@ -62,7 +62,8 @@ dictionary                         key, value, mutable                  flowtrac
 Week 5
 ------
 Files                              format, txt, csv                     write code to read from a file and store data in a dict
-                                   open write, code template            write code to write strings to file
+                                   open write, code template            write code to write strings to file, writ
+                                                                        '\n to move to the next line'
                                    '\n'                                 dont forget to close
                                    file directory, absolute/relative
 
@@ -86,7 +87,7 @@ Searching                          membership, retrieval (look-up)      apply th
 
 Week 7
 ------
-Sorting                                   merge sort                           draw recursion tree (diagram) divide and conquer
+Sorting                            merge sort                           draw recursion tree (diagram) divide and conquer
                                    quick sort                           code up in recursive functions
                                    sort algorithm efficiency
 
