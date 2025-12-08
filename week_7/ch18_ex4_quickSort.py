@@ -19,6 +19,30 @@ def quick_sort(S):
     :param S: a list to be sorted
     :return: sorted list
     """
+    # base case
+    if len(S) <= 1:
+        return S # sorted for [] or len = 1
+    else:
+        # divide
+        pivot = S[-1] # e.g. the last item of S
+        L = []
+        E = []
+        G = []
+        for item in S:
+            if item < pivot:
+                L.append(item)
+            elif item == pivot:
+                E.append(item)
+            else:
+                G.append(item)
+
+        # recursively solve the sub -problems of sorting L and G
+        L_sorted = quick_sort(L)
+        G_sorted = quick_sort(G)
+
+        return L_sorted + E + G_sorted
+
+# print(quick_sort([2,1,4,3]))
 
 
 

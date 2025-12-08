@@ -31,4 +31,20 @@ def merge_sort(S):
     :param S: a list to be sorted
     :return: sorted list
     """
+    # base case
+    if len(S) <= 1:
+        return S
+    else:
+        # divide step
+        mid_idx = (len(S)-1)//2  # round down  # len: 4, index 0 1 2 3, mid_idx =  1
+        left = S[:mid_idx+1]  # unsorted
+        right = S[mid_idx+1:] # unsorted
+        # sort them (conquer step)
+        left_sorted = merge_sort(left)
+        right_sorted = merge_sort(right)
+        return merge(left_sorted, right_sorted)
+
+
+# print(merge_sort([9, 4, 7, 3, 8, 9]))
+
 
